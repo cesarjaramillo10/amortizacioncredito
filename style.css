@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.principal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario{
+    width: 30%;
+    height: 280px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background: #e0e0e0ab;
+    box-shadow:  34px 34px 69px #bebebe,
+                 -34px -34px 69px #ffffff;
+}
+
+.tabla{
+    margin-top: 90px;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+}
+
+table, th, td {
+    border:1px solid rgb(179, 176, 176);
+   
+  }
+tr:nth-child(even){
+    background-color: #d6d2d2;
+}
+
+.canti, .meses, .tasa, .lavel{
+    width: 70%;
+    height: 30px;
+    border-radius: 6px;
+    border-color: #bebebe0e;
+    text-align: center;
+}
+.canti{
+    margin-top: 20px;
+}
+
+  
+.boton{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #f4f5f7;
+    background-color: #6caff3;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 10px 10px 10px 10px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   
+  }
+
+.boton:hover {
+    color: #5a5a5a;
+    background-color: #e0e5ef;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+   }
+   
+.boton:active {
+    box-shadow: none;
+   }
+.encabezado{
+    background-color: #6caff3;
+    color: white;
+  }
+.encabezadotogle{
+    display: none;
+  }
+
+
+  @media (max-width: 500px){
+    .formulario{
+        width: 95%;
+    }
+
+    .tabla{
+        margin-top: 50px;
+    }
+  }
