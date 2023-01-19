@@ -109,6 +109,7 @@ tr:nth-child(even){
 
     .tabla{
         margin-top: 50px;
+        width: 100%;
     }
     h1{
         text-align: center;
