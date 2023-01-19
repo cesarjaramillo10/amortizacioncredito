@@ -12,6 +12,18 @@
     align-items: center;
     
 }
+
+
+
+
+h1{
+    margin-top: 20px;;
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 700;
+    color:  #0d80f3;
+
+}
 .formulario{
     width: 30%;
     height: 280px;
@@ -100,5 +112,9 @@ tr:nth-child(even){
 
     .tabla{
         margin-top: 50px;
+    }
+    h1{
+        text-align: center;
+        font-size: 28px;
     }
   }
