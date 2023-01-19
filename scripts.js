@@ -1,4 +1,4 @@
-const tablita=document.querySelector(".tabla");
+// const tablita=document.querySelector(".tabla");
 const button=document.querySelector(".boton");
 const cantidad=document.querySelector(".canti");
 const meses=document.querySelector(".meses");
@@ -11,7 +11,7 @@ button.addEventListener("click",crearTabla);
 
 
 function crearTabla(){
-    
+    const tablita=document.querySelector(".tabla");
     var mon=parseInt(cantidad.value);
     var mes=parseInt(meses.value);
     var tasaa=parseInt(tasa.value);
@@ -20,13 +20,16 @@ function crearTabla(){
     let inte=0;
     let ac=0;
     let sf=mon;
-
+    tablita.remove();
+    const tablitaa=document.createElement("tabla");
+    tablitaa.setAttribute("class","tabla");
+    mainn.appendChild(tablitaa);
     if(isNaN(tasaa)==true || isNaN(mes)==true || isNaN(mon)==true){
         alert("faltan datos por llenar");
 
     }
     else{
-
+        
         pad2=document.createElement("tr");
         pad2.setAttribute('class','encabezado');
         enc1=document.createElement("td");
@@ -47,7 +50,7 @@ function crearTabla(){
         pad2.appendChild(enc4);
         pad2.appendChild(enc5);
         pad2.appendChild(enc6);
-        tablita.appendChild(pad2);
+        tablitaa.appendChild(pad2);
    
         for(x==0;x<mes+1;x++){
 
@@ -89,11 +92,13 @@ function crearTabla(){
             pad.appendChild(cuatro);
             pad.appendChild(cinco);
             pad.appendChild(seis);
-            tablita.appendChild(pad);
+            tablitaa.appendChild(pad);
         
         }
        
     }
     
+    x=0;
+    //tablitaa.remove();
      
 }
